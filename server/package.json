@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js --ignore ['logs/','src/training/'] src/app.js --exec 'npm run lint && node'",
+    "lint": "./node_modules/.bin/eslint src/**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "keypress": "^0.2.1",
+    "morgan": "^1.10.0",
+    "node-binance-api": "^0.12.4",
+    "pusher": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-vue": "^7.6.0",
+    "nodemon": "^2.0.7"
+  }
+}
